@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Setings"
+        android:id="@+id/itemSetings"
+        android:icon="@drawable/ic_setings"/>
+
+    <item
+        android:title="Rating"
+        android:id="@+id/itemRating"
+        android:icon="@drawable/ic_rating"/>
+
+    <item
+        android:title="Users"
+        android:id="@+id/itemUsers"
+        android:icon="@drawable/ic_users"/>
+
+    <item
+        android:title="Help"
+        android:id="@+id/itemHelp"
+        android:icon="@drawable/ic_help"/>
+
+</menu>

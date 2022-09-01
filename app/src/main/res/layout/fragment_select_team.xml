@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/third_magenta_light"
+    android:padding="16dp"
+    tools:context=".ui.screen.SelectTeamFragment">
+
+    <TextView
+        android:id="@+id/tvTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team"
+        android:textColor="@color/magenta_dark"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTeam"/>
+
+    <TextView
+        android:id="@+id/tvAddTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Team"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/magenta_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvTeam"/>
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flowInterval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="imgTimer,tvInterval"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_timer"
+        app:layout_constraintStart_toStartOf="@id/flowInterval"
+        app:layout_constraintTop_toTopOf="@id/flowInterval"/>
+
+    <TextView
+        android:id="@+id/tvInterval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interval"
+        android:textColor="#38006b"
+        android:textSize="24sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/imgTimer"
+        app:layout_constraintTop_toTopOf="@id/imgTimer"/>
+
+    <RadioGroup
+        android:id="@+id/rdGrupSetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:paddingStart="8dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/tvInterval"
+        app:layout_constraintStart_toStartOf="@id/tvInterval">
+
+        <RadioButton
+            android:id="@+id/rdBtn60Sec"
+            android:text="10 sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/rdBtn90sec"
+            android:text="60 sec"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/rdBtn120sec"
+            android:text="75 sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStartSinger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guess the singer"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="24dp"
+        android:backgroundTint="@color/magenta_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

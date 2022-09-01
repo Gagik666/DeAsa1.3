@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/secondry_magenta_light"
+    android:padding="16dp"
+    tools:context=".ui.screen.PointFragment">
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rvTeamPoint"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRefreshResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingHorizontal="32dp"
+        android:text="save data"
+        app:cornerRadius="24dp"
+        android:backgroundTint="@color/magenta_light"
+        android:textColor="@color/cardview_light_background"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvTeamPoint"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvShowhResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show olden result"
+        android:textSize="16sp"
+        android:textColor="#38006b"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/btnRefreshResults"
+        app:layout_constraintEnd_toEndOf="@id/btnRefreshResults"
+        app:layout_constraintTop_toBottomOf="@id/btnRefreshResults"/>
+
+ <androidx.recyclerview.widget.RecyclerView
+     android:id="@+id/rvTeamPointOlden"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="32dp"
+     android:visibility="invisible"
+     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+     app:layout_constraintTop_toBottomOf="@id/tvShowhResult"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+        android:backgroundTint="@color/magenta_light"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cornerRadius="24dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAgain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="play again"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="16dp"
+        android:visibility="invisible"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background"
+        android:backgroundTint="@color/magenta_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cornerRadius="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

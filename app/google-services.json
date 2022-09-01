@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "565139700248",
+    "project_id": "deasa13-6c11c",
+    "storage_bucket": "deasa13-6c11c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565139700248:android:2f278e70faae6f4716e16d",
+        "android_client_info": {
+          "package_name": "com.example.deasa13"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565139700248-vnm3vbq9sgu4ig5rqd7nca6k97h98jfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUJG6zWDedfrh3zxIHAQhXg0h-ZyZci30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565139700248-vnm3vbq9sgu4ig5rqd7nca6k97h98jfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DeAsa1.3</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="log_in">Log In</string>
+    <string name="registration">Registration</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_out">Log Out</string>
+    <string name="click_to_change_the_password">Click to change the password</string>
+    <string name="passwordbtn">Password</string>
+    <string name="email_address">Email address</string>
+    <string name="emailtv">Email</string>
+    <string name="firstname_lastname">FirstName LastName</string>
+    <string name="setings">SETINGS</string>
+</resources>

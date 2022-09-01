@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.deasa13.ui.screen.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.deasa13.ui.screen.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_setingsFragment"
+            app:destination="@id/setingsFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_selectTeamFragment"
+            app:destination="@id/selectTeamFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_retingFragment"
+            app:destination="@id/retingFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_usersFragment"
+            app:destination="@id/usersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setingsFragment"
+        android:name="com.example.deasa13.ui.screen.SetingsFragment"
+        android:label="fragment_setings"
+        tools:layout="@layout/fragment_setings" >
+        <action
+            android:id="@+id/action_setingsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_setingsFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.deasa13.ui.screen.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.deasa13.ui.screen.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectTeamFragment"
+        android:name="com.example.deasa13.ui.screen.SelectTeamFragment"
+        android:label="fragment_select_team"
+        tools:layout="@layout/fragment_select_team" >
+        <action
+            android:id="@+id/action_selectTeamFragment_to_teamDialogFragment"
+            app:destination="@id/teamDialogFragment" />
+        <action
+            android:id="@+id/action_selectTeamFragment_to_deAsaStoageFragment"
+            app:destination="@id/deAsaStoageFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/teamDialogFragment"
+        android:name="com.example.deasa13.ui.dialog.TeamDialogFragment"
+        android:label="fragment_team_dialog"
+        tools:layout="@layout/fragment_team_dialog" >
+        <argument
+            android:name="index"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_teamDialogFragment_to_selectTeamFragment"
+            app:destination="@id/selectTeamFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/deAsaStoageFragment"
+        android:name="com.example.deasa13.ui.screen.DeAsaStoageFragment"
+        android:label="fragment_de_asa_stoage"
+        tools:layout="@layout/fragment_de_asa_stoage" >
+        <action
+            android:id="@+id/action_deAsaStoageFragment_to_pointFragment"
+            app:destination="@id/pointFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pointFragment"
+        android:name="com.example.deasa13.ui.screen.PointFragment"
+        android:label="fragment_point"
+        tools:layout="@layout/fragment_point" >
+        <action
+            android:id="@+id/action_pointFragment_to_deAsaStoageFragment"
+            app:destination="@id/deAsaStoageFragment" />
+        <action
+            android:id="@+id/action_pointFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/retingFragment"
+        android:name="com.example.deasa13.ui.screen.RetingFragment"
+        android:label="fragment_reting"
+        tools:layout="@layout/fragment_reting" >
+        <action
+            android:id="@+id/action_retingFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.example.deasa13.ui.screen.UsersFragment"
+        android:label="fragment_users"
+        tools:layout="@layout/fragment_users" />
+</navigation>
